@@ -7,8 +7,12 @@
 //
 
 import UIKit
+//import AFNetworking.h
 
 class ScheduleViewController: UITableViewController {
+    
+//var tableView: UITableView?
+    let identifierCell = "Cell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,25 @@ class ScheduleViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.createTableView()
+
+    }
+    
+    func createTableView() {
+        
+        var frame: CGRect = self.view.bounds
+        frame.origin = CGPoint.zero
+        let tableView = UITableView(frame: frame, style: .grouped)
+        tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.register(CellFive.self, forCellReuseIdentifier: identifierCell) // регистрирую ячейку - использую CellFive для создания ячеек
+        
+        self.view.addSubview(tableView)
+        self.tableView = tableView
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,12 +49,12 @@ class ScheduleViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 10
@@ -39,7 +62,7 @@ class ScheduleViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifierCell, for: indexPath)
 
         // Configure the cell...
 

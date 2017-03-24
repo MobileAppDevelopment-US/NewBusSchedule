@@ -14,6 +14,7 @@
 		7299C3CD1E83E19F0092D9C1 /* NewBusScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3CC1E83E19F0092D9C1 /* NewBusScheduleTests.swift */; };
 		7299C3D81E83E19F0092D9C1 /* NewBusScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3D71E83E19F0092D9C1 /* NewBusScheduleUITests.swift */; };
 		7299C3E61E83E6B70092D9C1 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */; };
+		7299C3E81E8447C10092D9C1 /* CellFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3E71E8447C10092D9C1 /* CellFive.swift */; };
 		9935739EBD75B670A4B96032 /* libPods-NewBusSchedule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAF6A1D9612218CB688C59A /* libPods-NewBusSchedule.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		7299C3D71E83E19F0092D9C1 /* NewBusScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBusScheduleUITests.swift; sourceTree = "<group>"; };
 		7299C3D91E83E19F0092D9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		7299C3E71E8447C10092D9C1 /* CellFive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellFive.swift; sourceTree = "<group>"; };
 		85D5E299C3D9DB96B8D93F6B /* Pods-NewBusSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewBusSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.debug.xcconfig"; sourceTree = "<group>"; };
 		8DAF6A1D9612218CB688C59A /* libPods-NewBusSchedule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewBusSchedule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 		7299C3B61E83E19F0092D9C1 /* NewBusSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				7299C3E71E8447C10092D9C1 /* CellFive.swift */,
 				7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */,
 				7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */,
 				7299C3BE1E83E19F0092D9C1 /* Assets.xcassets */,
@@ -338,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7299C3B81E83E19F0092D9C1 /* AppDelegate.swift in Sources */,
+				7299C3E81E8447C10092D9C1 /* CellFive.swift in Sources */,
 				7299C3E61E83E6B70092D9C1 /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

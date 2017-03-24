@@ -11,13 +11,13 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: UIWindow? /// ? - может быть нил ! - в проперти - к первому моменту обращения там будет какое-то значение, если в коде - принудительно извлекает значение (исп. условия if если nil), если не будет ничего - падает//  если не объявил опциональным типом то в момент инициализации должна быть присвоено значение (инициализация)
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.white
+        self.window? = UIWindow(frame: UIScreen.main.bounds)
+        //self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
         
         let myController = ScheduleViewController()
