@@ -10,19 +10,19 @@ import UIKit
 
 class CellFive: UITableViewCell {
     
-    var sityLabel: UILabel! // объявил что она будет
+    var sityLabel: UILabel! // Announced that such a variable would be
     var dateFromLabel: UILabel!
     var timeFromLabel: UILabel!
     var dateToLabel: UILabel!
     var timeToLabel: UILabel!
     
-    var space: CGFloat? // создаю переменную
+    var space: CGFloat? // I create a variable
     var widthSityLabel: CGFloat?
     var widthOtherLabel: CGFloat?
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-    
+        
         sityLabel = createLabel()
         sityLabel.textAlignment = .center
         dateFromLabel = createLabel()
@@ -33,11 +33,30 @@ class CellFive: UITableViewCell {
         dateToLabel.textAlignment = .center
         timeToLabel = createLabel()
         timeToLabel.textAlignment = .center
-            
+        
         }
 
-    required init?(coder aDecoder: NSCoder) { //????? что это
+    required init?(coder aDecoder: NSCoder) {
+        
         fatalError("init(coder:) has not been implemented")
+        
+    }
+    
+    func headerConfig() {
+        
+        self.backgroundColor = UIColor.init(colorLiteralRed: 215.0/255, green: 211.0/255, blue: 213.0/255, alpha: 0.5)
+        
+        sityLabel.text = "Маршрут"
+        sityLabel.font = UIFont(name: "Baskerville-Bold", size: 26)
+        //sityLabel.sizeToFit()
+        dateFromLabel.text = "Дата отправ"
+        dateFromLabel.numberOfLines = 0 //кол-во линий несколько > 1
+        dateFromLabel.lineBreakMode = .byWordWrapping // режим переноса линий из списка енам
+        timeFromLabel.text = "Время отправ"
+        //timeFromLabel.sizeToFit() //подогнать размер текста под лейбл
+        dateToLabel.text = "Дата приб"
+        timeToLabel.text = "Время приб"
+        
     }
     
     func createLabel() -> UILabel {
@@ -47,9 +66,10 @@ class CellFive: UITableViewCell {
         label.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
         label.adjustsFontSizeToFitWidth = true
         
-        self.contentView.addSubview(label)
+        contentView.addSubview(label)
         
         return label
+        
     }
     
     func setWidthLabels() {
@@ -67,11 +87,11 @@ class CellFive: UITableViewCell {
         
         sityLabel.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: widthSityLabel!, height: CGFloat(self.frame.size.height))
         dateFromLabel.frame = CGRect(x: sityLabel.frame.size.width + space!, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
-        timeFromLabel.frame = CGRect(x: dateFromLabel.frame.size.width + dateFromLabel.frame.origin.x, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
-        dateToLabel.frame = CGRect(x: timeFromLabel.frame.size.width + timeFromLabel.frame.origin.x, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
-        timeToLabel.frame = CGRect(x: dateToLabel.frame.size.width + dateToLabel.frame.origin.x, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
+        timeFromLabel.frame = CGRect(x: dateFromLabel.frame.size.width + dateFromLabel.frame.origin.x + space!, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
+        dateToLabel.frame = CGRect(x: timeFromLabel.frame.size.width + timeFromLabel.frame.origin.x + space!, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
+        timeToLabel.frame = CGRect(x: dateToLabel.frame.size.width + dateToLabel.frame.origin.x + space!, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
         
     }
     
-
+    
 }
