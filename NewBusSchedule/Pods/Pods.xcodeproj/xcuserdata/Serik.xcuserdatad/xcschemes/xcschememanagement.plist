@@ -14,30 +14,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-NewBusScheduleTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-NewBusScheduleUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00C169342A95A7E43CE4EC722B80F059</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3FB34787670266D01951698967DD623F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6291916593EB5AE6DE73A48AD35A818E</key>
+		<key>86C0706AB3C2D6DE5943E92F071B83A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

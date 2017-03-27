@@ -1,6 +1,0 @@
-framework module Pods_NewBusScheduleTests {
-  umbrella header "Pods-NewBusScheduleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

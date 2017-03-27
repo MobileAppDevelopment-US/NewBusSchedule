@@ -9,37 +9,31 @@
 /* Begin PBXBuildFile section */
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */; };
 		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C250FB6F185762863398F4AD423283E /* Pods-NewBusScheduleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8009D8B02D77794309874944DADC6831 /* Pods-NewBusScheduleTests-dummy.m */; };
+		1ECF8407895AE2693551B612B30DA327 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */; };
-		3B62897381496B16CA5B419461D9D032 /* Pods-NewBusSchedule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8BB345493BEEDFEFE929962F515D1 /* Pods-NewBusSchedule-dummy.m */; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E230A0448B394DE26E688DAC8E6201E /* Request.swift */; };
+		5CF55D32D77B375B6892C0B967CD137F /* Pods-NewBusSchedule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5475A113E2786F24D61F6BF3A9BD798A /* Pods-NewBusSchedule-dummy.m */; };
 		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */; };
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */; };
-		842EEF09740A60B406E7244C9698E88E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */; };
 		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */; };
+		A49A6E4C3F95546C93B2FE7F54FD8686 /* Pods-NewBusSchedule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A818E84E15A90D40C24165DA28C3DD /* Pods-NewBusSchedule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */; };
 		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */; };
 		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */; };
 		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */; };
 		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */; };
-		C6980FF5F8225C3D38E5BFC86D09336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		CA35952C83DB3B04DD5D5D07F91B6AC2 /* Pods-NewBusSchedule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F12FCEDF8304FA503E0FD36A6229D213 /* Pods-NewBusSchedule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */; };
-		CE3DCA019BD7238EED0C68675D4358F7 /* Pods-NewBusScheduleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EC56062510995FE65782CDFAB86CC /* Pods-NewBusScheduleUITests-dummy.m */; };
-		D3AE63223C5EDC10E35F81BA77ED8196 /* Pods-NewBusScheduleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA29C43C4DCE467B3E55DC2D945E0F0C /* Pods-NewBusScheduleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */; };
 		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */; };
 		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */; };
-		F95F88191585C4D3711D0C9CB843C3E2 /* Pods-NewBusScheduleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B44E8118F3A07E232298E1DD2DD2D33 /* Pods-NewBusScheduleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA7BF5B856D09C1FFAC27F6648D0AD20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BBB984A4FC680DB1A74AD7B7639B0C43 /* PBXContainerItemProxy */ = {
+		5E4B4C07FC631C888D54A43E2AE56DF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -49,92 +43,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0088F2FDF2B6AF81C80CA1DF6B2B942E /* Pods-NewBusScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewBusScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		0C4E4F20F296088EB20308C3B05C250B /* Pods-NewBusSchedule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NewBusSchedule-acknowledgements.plist"; sourceTree = "<group>"; };
-		0F2ECC14813B083364377891997C992D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		13A0A663B36A229C69D5274A83E93F88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14A822AEAB910BBF2C40DAB82A85B72F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		1708907C8426117B7378A50690287554 /* Pods-NewBusSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewBusSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		19815D132C592D6FC30A424F33D4EF27 /* Pods-NewBusScheduleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewBusScheduleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E230A0448B394DE26E688DAC8E6201E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		228B37C7D71B64EC2CA7B56A52ACDB2C /* Pods-NewBusScheduleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewBusScheduleTests-frameworks.sh"; sourceTree = "<group>"; };
+		20A818E84E15A90D40C24165DA28C3DD /* Pods-NewBusSchedule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewBusSchedule-umbrella.h"; sourceTree = "<group>"; };
 		22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		286881C535425B0AF5068469D860E0F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F5FCDF5D24CFF507C12BD88D5546717 /* Pods-NewBusSchedule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NewBusSchedule.modulemap"; sourceTree = "<group>"; };
+		2D9B01B5221D0EC5A64D53F9AC22D18A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		3B5BA74C606B38CB20C19FAC5795E778 /* Pods-NewBusSchedule-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewBusSchedule-resources.sh"; sourceTree = "<group>"; };
 		3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		3F9E1EEAA4405F3D605298B3609E5CC5 /* Pods_NewBusScheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NewBusScheduleUITests.framework; path = "Pods-NewBusScheduleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4009168413293F916AC76B1FCD4E039C /* Pods-NewBusSchedule-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewBusSchedule-frameworks.sh"; sourceTree = "<group>"; };
 		46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		475DC7748DDF3D3DE054C68F7BE72A5F /* Pods-NewBusScheduleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewBusScheduleUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		4B75F789D074C78761FF0C9CF74E2A7D /* Pods-NewBusSchedule-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewBusSchedule-frameworks.sh"; sourceTree = "<group>"; };
-		62DAC19965C837258AB1EBADF5B14582 /* Pods-NewBusScheduleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NewBusScheduleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		64967DF4D4BB9F7438DDE0FB7DCB033E /* Pods-NewBusScheduleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewBusScheduleUITests-resources.sh"; sourceTree = "<group>"; };
+		5475A113E2786F24D61F6BF3A9BD798A /* Pods-NewBusSchedule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NewBusSchedule-dummy.m"; sourceTree = "<group>"; };
+		5C6B6F0776A4496D6AF22FB9EB057263 /* Pods-NewBusSchedule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NewBusSchedule.modulemap"; sourceTree = "<group>"; };
 		6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		6C6EB8D86FFA4F1B78988646FABC8604 /* Pods-NewBusSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewBusSchedule.debug.xcconfig"; sourceTree = "<group>"; };
+		720FB96BF4E5BCDBA37ADE81838DD6C9 /* Pods-NewBusSchedule-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewBusSchedule-resources.sh"; sourceTree = "<group>"; };
 		7D141D1953E5C6E67E362CE73090E48A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		8009D8B02D77794309874944DADC6831 /* Pods-NewBusScheduleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NewBusScheduleTests-dummy.m"; sourceTree = "<group>"; };
-		80D4A6AFA1B68E90663BB54EFB035B99 /* Pods-NewBusScheduleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewBusScheduleTests-resources.sh"; sourceTree = "<group>"; };
 		87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94B179CF4D0DBF262DC0503360C7B8C9 /* Pods-NewBusScheduleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NewBusScheduleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		951FAAA4BF58AA680186F3D18A9AD6EE /* Pods_NewBusScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NewBusScheduleTests.framework; path = "Pods-NewBusScheduleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B44E8118F3A07E232298E1DD2DD2D33 /* Pods-NewBusScheduleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewBusScheduleUITests-umbrella.h"; sourceTree = "<group>"; };
+		94B7E628886ADBBF4BED54975EF0399E /* Pods-NewBusSchedule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NewBusSchedule-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9F239A882D61CB0BF461F1D6303CEB74 /* Pods-NewBusSchedule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NewBusSchedule-acknowledgements.plist"; sourceTree = "<group>"; };
 		A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		A4E92ECD139513B992CCBF0E26662362 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB0A505CE2EF5553A3BB91CBD498CBC2 /* Pods-NewBusScheduleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NewBusScheduleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		B44A27EFBB0DA84D738057B77F3413B1 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		B8392CECFA0DEB9C19CF3A0DA2EDFFCB /* Pods-NewBusSchedule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NewBusSchedule-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B84D88C9D8D8B71BB5906B079366A726 /* Pods_NewBusSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NewBusSchedule.framework; path = "Pods-NewBusSchedule.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B877F240A75E4B026CE93C637AFFE83E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCA9CA7D9C1A2047BB93336C5708DFD /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		BE18FFE267572B058D217BE29B3CDFF3 /* Pods-NewBusScheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewBusScheduleTests.release.xcconfig"; sourceTree = "<group>"; };
-		C10970329412243FCAC4FEA50C97EF8D /* Pods-NewBusScheduleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NewBusScheduleUITests.modulemap"; sourceTree = "<group>"; };
-		C27A5EC97D71F2D7A4DB0C2980CAB48F /* Pods-NewBusSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewBusSchedule.debug.xcconfig"; sourceTree = "<group>"; };
-		C3FE5A7F5E70343DD47E720F92CC0789 /* Pods-NewBusScheduleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NewBusScheduleTests.modulemap"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DF74F418A2B5952ECE97A2C2F98D7AD9 /* Pods_NewBusSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NewBusSchedule.framework; path = "Pods-NewBusSchedule.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E636E95DE0906A07A35BD3FAAE9EE0 /* Pods-NewBusSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewBusSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		EDA8BB345493BEEDFEFE929962F515D1 /* Pods-NewBusSchedule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NewBusSchedule-dummy.m"; sourceTree = "<group>"; };
-		F12FCEDF8304FA503E0FD36A6229D213 /* Pods-NewBusSchedule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewBusSchedule-umbrella.h"; sourceTree = "<group>"; };
-		F167A883E2BE17D067E21C7CBFFB945B /* Pods-NewBusScheduleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NewBusScheduleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FA29C43C4DCE467B3E55DC2D945E0F0C /* Pods-NewBusScheduleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewBusScheduleTests-umbrella.h"; sourceTree = "<group>"; };
-		FB4EC56062510995FE65782CDFAB86CC /* Pods-NewBusScheduleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NewBusScheduleUITests-dummy.m"; sourceTree = "<group>"; };
-		FD1E62E87F28E9EB6EEF577E99859B8E /* Pods-NewBusScheduleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewBusScheduleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2056D52AF3ADC1E0F8BE1BF33808134A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				842EEF09740A60B406E7244C9698E88E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		30532AE48978C455EE9EAA5AC437A78B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA7BF5B856D09C1FFAC27F6648D0AD20 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		809398CC7C3ACE2F69C179C47FB94821 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6980FF5F8225C3D38E5BFC86D09336C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,17 +91,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3979499FD5BDC1940F41075D34881D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ECF8407895AE2693551B612B30DA327 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		071EBF03F9CB5F2341079CD7131A2DEA /* Targets Support Files */ = {
+		09D709AE96C572F64F50F0DFEDD17B8F /* Pods-NewBusSchedule */ = {
 			isa = PBXGroup;
 			children = (
-				A37B0039F845606C6937215C0D567C08 /* Pods-NewBusSchedule */,
-				3AE5079BBB55143B73ED46F4C5897EFC /* Pods-NewBusScheduleTests */,
-				A6CFA3CD144BDCDEBDD001366918A151 /* Pods-NewBusScheduleUITests */,
+				2D9B01B5221D0EC5A64D53F9AC22D18A /* Info.plist */,
+				5C6B6F0776A4496D6AF22FB9EB057263 /* Pods-NewBusSchedule.modulemap */,
+				94B7E628886ADBBF4BED54975EF0399E /* Pods-NewBusSchedule-acknowledgements.markdown */,
+				9F239A882D61CB0BF461F1D6303CEB74 /* Pods-NewBusSchedule-acknowledgements.plist */,
+				5475A113E2786F24D61F6BF3A9BD798A /* Pods-NewBusSchedule-dummy.m */,
+				4009168413293F916AC76B1FCD4E039C /* Pods-NewBusSchedule-frameworks.sh */,
+				720FB96BF4E5BCDBA37ADE81838DD6C9 /* Pods-NewBusSchedule-resources.sh */,
+				20A818E84E15A90D40C24165DA28C3DD /* Pods-NewBusSchedule-umbrella.h */,
+				6C6EB8D86FFA4F1B78988646FABC8604 /* Pods-NewBusSchedule.debug.xcconfig */,
+				D5E636E95DE0906A07A35BD3FAAE9EE0 /* Pods-NewBusSchedule.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-NewBusSchedule";
+			path = "Target Support Files/Pods-NewBusSchedule";
 			sourceTree = "<group>";
 		};
 		200D10EB20F0397D47F022B50CF0433F /* Alamofire */ = {
@@ -190,35 +154,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3AE5079BBB55143B73ED46F4C5897EFC /* Pods-NewBusScheduleTests */ = {
-			isa = PBXGroup;
-			children = (
-				286881C535425B0AF5068469D860E0F2 /* Info.plist */,
-				C3FE5A7F5E70343DD47E720F92CC0789 /* Pods-NewBusScheduleTests.modulemap */,
-				94B179CF4D0DBF262DC0503360C7B8C9 /* Pods-NewBusScheduleTests-acknowledgements.markdown */,
-				62DAC19965C837258AB1EBADF5B14582 /* Pods-NewBusScheduleTests-acknowledgements.plist */,
-				8009D8B02D77794309874944DADC6831 /* Pods-NewBusScheduleTests-dummy.m */,
-				228B37C7D71B64EC2CA7B56A52ACDB2C /* Pods-NewBusScheduleTests-frameworks.sh */,
-				80D4A6AFA1B68E90663BB54EFB035B99 /* Pods-NewBusScheduleTests-resources.sh */,
-				FA29C43C4DCE467B3E55DC2D945E0F0C /* Pods-NewBusScheduleTests-umbrella.h */,
-				0088F2FDF2B6AF81C80CA1DF6B2B942E /* Pods-NewBusScheduleTests.debug.xcconfig */,
-				BE18FFE267572B058D217BE29B3CDFF3 /* Pods-NewBusScheduleTests.release.xcconfig */,
-			);
-			name = "Pods-NewBusScheduleTests";
-			path = "Target Support Files/Pods-NewBusScheduleTests";
-			sourceTree = "<group>";
-		};
-		550AA24C43EB47E0484556E6CDA99D03 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				14A822AEAB910BBF2C40DAB82A85B72F /* Alamofire.framework */,
-				DF74F418A2B5952ECE97A2C2F98D7AD9 /* Pods_NewBusSchedule.framework */,
-				951FAAA4BF58AA680186F3D18A9AD6EE /* Pods_NewBusScheduleTests.framework */,
-				3F9E1EEAA4405F3D605298B3609E5CC5 /* Pods_NewBusScheduleUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		55F14F994FE7AB51F028BFE66CEF3106 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,45 +182,18 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */,
-				550AA24C43EB47E0484556E6CDA99D03 /* Products */,
-				071EBF03F9CB5F2341079CD7131A2DEA /* Targets Support Files */,
+				8A595CDE5CF8525B9D7004371C1C4194 /* Products */,
+				FDB2E807550E50AC8281848A247A5707 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A37B0039F845606C6937215C0D567C08 /* Pods-NewBusSchedule */ = {
+		8A595CDE5CF8525B9D7004371C1C4194 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4E92ECD139513B992CCBF0E26662362 /* Info.plist */,
-				2F5FCDF5D24CFF507C12BD88D5546717 /* Pods-NewBusSchedule.modulemap */,
-				B8392CECFA0DEB9C19CF3A0DA2EDFFCB /* Pods-NewBusSchedule-acknowledgements.markdown */,
-				0C4E4F20F296088EB20308C3B05C250B /* Pods-NewBusSchedule-acknowledgements.plist */,
-				EDA8BB345493BEEDFEFE929962F515D1 /* Pods-NewBusSchedule-dummy.m */,
-				4B75F789D074C78761FF0C9CF74E2A7D /* Pods-NewBusSchedule-frameworks.sh */,
-				3B5BA74C606B38CB20C19FAC5795E778 /* Pods-NewBusSchedule-resources.sh */,
-				F12FCEDF8304FA503E0FD36A6229D213 /* Pods-NewBusSchedule-umbrella.h */,
-				C27A5EC97D71F2D7A4DB0C2980CAB48F /* Pods-NewBusSchedule.debug.xcconfig */,
-				1708907C8426117B7378A50690287554 /* Pods-NewBusSchedule.release.xcconfig */,
+				B877F240A75E4B026CE93C637AFFE83E /* Alamofire.framework */,
+				B84D88C9D8D8B71BB5906B079366A726 /* Pods_NewBusSchedule.framework */,
 			);
-			name = "Pods-NewBusSchedule";
-			path = "Target Support Files/Pods-NewBusSchedule";
-			sourceTree = "<group>";
-		};
-		A6CFA3CD144BDCDEBDD001366918A151 /* Pods-NewBusScheduleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0F2ECC14813B083364377891997C992D /* Info.plist */,
-				C10970329412243FCAC4FEA50C97EF8D /* Pods-NewBusScheduleUITests.modulemap */,
-				AB0A505CE2EF5553A3BB91CBD498CBC2 /* Pods-NewBusScheduleUITests-acknowledgements.markdown */,
-				F167A883E2BE17D067E21C7CBFFB945B /* Pods-NewBusScheduleUITests-acknowledgements.plist */,
-				FB4EC56062510995FE65782CDFAB86CC /* Pods-NewBusScheduleUITests-dummy.m */,
-				475DC7748DDF3D3DE054C68F7BE72A5F /* Pods-NewBusScheduleUITests-frameworks.sh */,
-				64967DF4D4BB9F7438DDE0FB7DCB033E /* Pods-NewBusScheduleUITests-resources.sh */,
-				9B44E8118F3A07E232298E1DD2DD2D33 /* Pods-NewBusScheduleUITests-umbrella.h */,
-				19815D132C592D6FC30A424F33D4EF27 /* Pods-NewBusScheduleUITests.debug.xcconfig */,
-				FD1E62E87F28E9EB6EEF577E99859B8E /* Pods-NewBusScheduleUITests.release.xcconfig */,
-			);
-			name = "Pods-NewBusScheduleUITests";
-			path = "Target Support Files/Pods-NewBusScheduleUITests";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -296,22 +204,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FDB2E807550E50AC8281848A247A5707 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				09D709AE96C572F64F50F0DFEDD17B8F /* Pods-NewBusSchedule */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		28369D4E343CB973970EFBAB4406C093 /* Headers */ = {
+		76405EB412A292F4DBD05023C5CEEAB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F95F88191585C4D3711D0C9CB843C3E2 /* Pods-NewBusScheduleUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36EFEDAFCDFD1914919510B41EB67D1D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3AE63223C5EDC10E35F81BA77ED8196 /* Pods-NewBusScheduleTests-umbrella.h in Headers */,
+				A49A6E4C3F95546C93B2FE7F54FD8686 /* Pods-NewBusSchedule-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,67 +231,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D49AE5AD594D6F7CA7984CFBDD431365 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA35952C83DB3B04DD5D5D07F91B6AC2 /* Pods-NewBusSchedule-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00C169342A95A7E43CE4EC722B80F059 /* Pods-NewBusSchedule */ = {
+		86C0706AB3C2D6DE5943E92F071B83A5 /* Pods-NewBusSchedule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B42E49378474D792845E22AFC22760B6 /* Build configuration list for PBXNativeTarget "Pods-NewBusSchedule" */;
+			buildConfigurationList = FBDE0173AD00C37CEA5B2D2BEC689B76 /* Build configuration list for PBXNativeTarget "Pods-NewBusSchedule" */;
 			buildPhases = (
-				0FA60DB323B4B39BBFFC3AA70B6B9AA6 /* Sources */,
-				2056D52AF3ADC1E0F8BE1BF33808134A /* Frameworks */,
-				D49AE5AD594D6F7CA7984CFBDD431365 /* Headers */,
+				1E3777A883D6B874BC50FF1BEF91ADC4 /* Sources */,
+				F3979499FD5BDC1940F41075D34881D8 /* Frameworks */,
+				76405EB412A292F4DBD05023C5CEEAB4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1B6D637F2F5B86CB12A6F88F9805EADA /* PBXTargetDependency */,
 			);
 			name = "Pods-NewBusSchedule";
 			productName = "Pods-NewBusSchedule";
-			productReference = DF74F418A2B5952ECE97A2C2F98D7AD9 /* Pods_NewBusSchedule.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3FB34787670266D01951698967DD623F /* Pods-NewBusScheduleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A772426213B3DCA9D638D991E8DC13A /* Build configuration list for PBXNativeTarget "Pods-NewBusScheduleTests" */;
-			buildPhases = (
-				55AC128B7A4240F988A43F2FC39535C9 /* Sources */,
-				30532AE48978C455EE9EAA5AC437A78B /* Frameworks */,
-				36EFEDAFCDFD1914919510B41EB67D1D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC6494390845BFC642C1FC9F95D2A3B8 /* PBXTargetDependency */,
-			);
-			name = "Pods-NewBusScheduleTests";
-			productName = "Pods-NewBusScheduleTests";
-			productReference = 951FAAA4BF58AA680186F3D18A9AD6EE /* Pods_NewBusScheduleTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6291916593EB5AE6DE73A48AD35A818E /* Pods-NewBusScheduleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 242E63563AC3724BF0F52F76D724239D /* Build configuration list for PBXNativeTarget "Pods-NewBusScheduleUITests" */;
-			buildPhases = (
-				7C019F6092BA62B3833783A48C07C321 /* Sources */,
-				809398CC7C3ACE2F69C179C47FB94821 /* Frameworks */,
-				28369D4E343CB973970EFBAB4406C093 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-NewBusScheduleUITests";
-			productName = "Pods-NewBusScheduleUITests";
-			productReference = 3F9E1EEAA4405F3D605298B3609E5CC5 /* Pods_NewBusScheduleUITests.framework */;
+			productReference = B84D88C9D8D8B71BB5906B079366A726 /* Pods_NewBusSchedule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -400,7 +266,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 14A822AEAB910BBF2C40DAB82A85B72F /* Alamofire.framework */;
+			productReference = B877F240A75E4B026CE93C637AFFE83E /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -420,24 +286,22 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 550AA24C43EB47E0484556E6CDA99D03 /* Products */;
+			productRefGroup = 8A595CDE5CF8525B9D7004371C1C4194 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
-				00C169342A95A7E43CE4EC722B80F059 /* Pods-NewBusSchedule */,
-				3FB34787670266D01951698967DD623F /* Pods-NewBusScheduleTests */,
-				6291916593EB5AE6DE73A48AD35A818E /* Pods-NewBusScheduleUITests */,
+				86C0706AB3C2D6DE5943E92F071B83A5 /* Pods-NewBusSchedule */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FA60DB323B4B39BBFFC3AA70B6B9AA6 /* Sources */ = {
+		1E3777A883D6B874BC50FF1BEF91ADC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B62897381496B16CA5B419461D9D032 /* Pods-NewBusSchedule-dummy.m in Sources */,
+				5CF55D32D77B375B6892C0B967CD137F /* Pods-NewBusSchedule-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,30 +330,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55AC128B7A4240F988A43F2FC39535C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C250FB6F185762863398F4AD423283E /* Pods-NewBusScheduleTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C019F6092BA62B3833783A48C07C321 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE3DCA019BD7238EED0C68675D4358F7 /* Pods-NewBusScheduleUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EC6494390845BFC642C1FC9F95D2A3B8 /* PBXTargetDependency */ = {
+		1B6D637F2F5B86CB12A6F88F9805EADA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = BBB984A4FC680DB1A74AD7B7639B0C43 /* PBXContainerItemProxy */;
+			targetProxy = 5E4B4C07FC631C888D54A43E2AE56DF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,41 +373,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		0AE50950AE1C5866F39FB949C7735644 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C27A5EC97D71F2D7A4DB0C2980CAB48F /* Pods-NewBusSchedule.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NewBusSchedule/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NewBusSchedule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -605,44 +418,9 @@
 			};
 			name = Debug;
 		};
-		7F2C4B13718236630C41CE418A16F5B3 /* Release */ = {
+		97220F32313F474C266EC9B0FC2C7097 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD1E62E87F28E9EB6EEF577E99859B8E /* Pods-NewBusScheduleUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NewBusScheduleUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NewBusScheduleUITests/Pods-NewBusScheduleUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NewBusScheduleUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		85AD7F6864678D8C5E6E704F428CCDD7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19815D132C592D6FC30A424F33D4EF27 /* Pods-NewBusScheduleUITests.debug.xcconfig */;
+			baseConfigurationReference = 6C6EB8D86FFA4F1B78988646FABC8604 /* Pods-NewBusSchedule.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -655,64 +433,30 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NewBusScheduleUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NewBusSchedule/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NewBusScheduleUITests/Pods-NewBusScheduleUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NewBusScheduleUITests;
+				PRODUCT_NAME = Pods_NewBusSchedule;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A70E1D05449DF4C4448AC64D4AE819E4 /* Release */ = {
+		C0B5E6E5C70F88E3B338F65DECFECCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE18FFE267572B058D217BE29B3CDFF3 /* Pods-NewBusScheduleTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NewBusScheduleTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NewBusScheduleTests/Pods-NewBusScheduleTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NewBusScheduleTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C71C1BD99B42EDFF627D979F5AEAA538 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1708907C8426117B7378A50690287554 /* Pods-NewBusSchedule.release.xcconfig */;
+			baseConfigurationReference = D5E636E95DE0906A07A35BD3FAAE9EE0 /* Pods-NewBusSchedule.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -744,42 +488,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		CDC51B9A9821E292FD0FDCFE1E10666C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0088F2FDF2B6AF81C80CA1DF6B2B942E /* Pods-NewBusScheduleTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NewBusScheduleTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NewBusScheduleTests/Pods-NewBusScheduleTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NewBusScheduleTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -857,24 +565,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A772426213B3DCA9D638D991E8DC13A /* Build configuration list for PBXNativeTarget "Pods-NewBusScheduleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CDC51B9A9821E292FD0FDCFE1E10666C /* Debug */,
-				A70E1D05449DF4C4448AC64D4AE819E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		242E63563AC3724BF0F52F76D724239D /* Build configuration list for PBXNativeTarget "Pods-NewBusScheduleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				85AD7F6864678D8C5E6E704F428CCDD7 /* Debug */,
-				7F2C4B13718236630C41CE418A16F5B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -893,11 +583,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B42E49378474D792845E22AFC22760B6 /* Build configuration list for PBXNativeTarget "Pods-NewBusSchedule" */ = {
+		FBDE0173AD00C37CEA5B2D2BEC689B76 /* Build configuration list for PBXNativeTarget "Pods-NewBusSchedule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AE50950AE1C5866F39FB949C7735644 /* Debug */,
-				C71C1BD99B42EDFF627D979F5AEAA538 /* Release */,
+				97220F32313F474C266EC9B0FC2C7097 /* Debug */,
+				C0B5E6E5C70F88E3B338F65DECFECCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
