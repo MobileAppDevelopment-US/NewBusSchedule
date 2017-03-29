@@ -47,15 +47,23 @@ class CellFive: UITableViewCell {
         self.backgroundColor = UIColor.init(colorLiteralRed: 215.0/255, green: 211.0/255, blue: 213.0/255, alpha: 0.5)
         
         sityLabel.text = "Маршрут"
-        sityLabel.font = UIFont(name: "Baskerville-Bold", size: 26)
-        //sityLabel.sizeToFit()
-        dateFromLabel.text = "Дата отправ"
-        dateFromLabel.numberOfLines = 0 //кол-во линий несколько > 1
-        dateFromLabel.lineBreakMode = .byWordWrapping // режим переноса линий из списка енам
-        timeFromLabel.text = "Время отправ"
-        //timeFromLabel.sizeToFit() //подогнать размер текста под лейбл
-        dateToLabel.text = "Дата приб"
-        timeToLabel.text = "Время приб"
+        sityLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
+        dateFromLabel.text = "Дата отправления"
+        dateFromLabel.numberOfLines = 0
+        dateFromLabel.lineBreakMode = .byWordWrapping
+        dateFromLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
+        timeFromLabel.text = "Время отправления"
+        timeFromLabel.numberOfLines = 0
+        timeFromLabel.lineBreakMode = .byWordWrapping
+        timeFromLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
+        dateToLabel.text = "Дата прибытия"
+        dateToLabel.numberOfLines = 0
+        dateToLabel.lineBreakMode = .byWordWrapping
+        dateToLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
+        timeToLabel.text = "Время прибытия"
+        timeToLabel.numberOfLines = 0
+        timeToLabel.lineBreakMode = .byWordWrapping
+        timeToLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
         
     }
     

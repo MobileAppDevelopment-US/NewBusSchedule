@@ -10,7 +10,7 @@ import UIKit
 
 class InfoViewController: UITableViewController {
     
-    var dictionatySchedule: NSDictionary?
+    var dictionarySchedule: NSDictionary?
     var arrayNamesRows: NSArray?
     let identifierCellInfo = "Cell"
     
