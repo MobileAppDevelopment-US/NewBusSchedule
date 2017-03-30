@@ -19,44 +19,37 @@ class ScheduleViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.arrayDictionaries = (userDefault.object(forKey: "arrayDictionaries") as? NSArray?)! ?? [String]() as NSArray
+        arrayDictionaries = (userDefault.object(forKey: "arrayDictionaries") as? NSArray?)! ?? [String]() as NSArray
         
-        if self.arrayDictionaries.count == 0 {  // isEmpty
+        if arrayDictionaries.count == 0 {  // isEmpty?
             
             loadData()
             
         } else {
             
-            
+            dataFromLocalDatabase()
             
         }
-
-
-
-
-        loadData()
         
         //createTableView()
         self.navigationItem.title = "Расписание автобусов"
         
-        self.refresh = UIRefreshControl()
+        refresh = UIRefreshControl()
         
-        self.refresh.addTarget(self, action: #selector(self.actionRefresh), for: .valueChanged)
+        refresh.addTarget(self, action: #selector(self.actionRefresh), for: .valueChanged)
         self.tableView.refreshControl = refresh
         
         self.tableView.register(CellFive.self, forCellReuseIdentifier: identifierCellSchedule) // I register a cell - I use CellFive to create cells
-
+        
     }
-    
-    
     
     func dataFromLocalDatabase() {
         
         self.tableView.reloadData()
         
-        //showAllert(withMessage: "Вы используете данные из локальной базы. Пожалуйста обновите данные!", andTitle: "ВНИМАНИЕ!")
+        showAlert(withMessage: "Вы используете данные из локальной базы. Пожалуйста обновите данные!",
+                  andTitle: "ВНИМАНИЕ!")
         
-
     }
     
     func loadData()  {
@@ -68,28 +61,33 @@ class ScheduleViewController: UITableViewController {
             
             if let result = response.result.value {
                 
-                let JSON = result as! NSDictionary
+                let dictJSON = result as! NSDictionary
                 
-                self.arrayDictionaries = JSON.object(forKey: "data") as! NSArray
+                if (dictJSON.count > 0) {
+                    
+                    self.arrayDictionaries = dictJSON.object(forKey: "data") as! NSArray
+                    
+                    self.refresh.endRefreshing()
+                    
+                    self.tableView.reloadData()
+                    
+                    self.saveUserDefault()
+                    
+                    self.view.viewWithTag(1)?.removeFromSuperview()
+                    
+                    self.showAlert(withMessage: "Список маршрутов обновлен",
+                                   andTitle: "")
+                    
+                } else {
+                    
+                    self.showAlert(withMessage: "Список маршрутов пуст",
+                                   andTitle: "ВНИМАНИЕ")
+                    
+                }
                 
             }
             
         }
-        
-            self.view.viewWithTag(1)?.removeFromSuperview()
-            
-            //there must be allert
-            
-            self.refresh.endRefreshing()
-            
-            self.tableView.reloadData()
-
-            //there must be save data
-            
-            //there must be bloks
-            
-            //var myDict:NSDictionary = ["Data" : myArrayOfDict] // массив  в  словарь
-
         
     }
     
@@ -103,7 +101,6 @@ class ScheduleViewController: UITableViewController {
         
     }
     
- 
     //MARK: - Action
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -111,30 +108,47 @@ class ScheduleViewController: UITableViewController {
         let controller = InfoViewController()
         self.navigationController?.pushViewController(controller, animated: true)
         
-        controller.dictionarySchedule = self.arrayDictionaries[indexPath.row] as? NSDictionary
+        controller.dictionarySchedule = arrayDictionaries.object(at:indexPath.row) as? NSDictionary 
         
     }
-
     
     func actionRefresh(_ sender: UIRefreshControl) {
         
         loadData()
         
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 50
+        return arrayDictionaries.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifierCellSchedule, for: indexPath) as! CellFive
         
-    //let dic: NSDictionary = self.arrayDictionaries.object(at: indexPath.row) as! NSDictionary
-        //let dic: [AnyHashable: Any]? = (arrayDictionaries[indexPath.row] as? [AnyHashable: Any])
-
+        let dict: NSDictionary = arrayDictionaries.object(at:indexPath.row) as! NSDictionary
+        
+        let dictFromCity: NSDictionary = dict.object(forKey: "from_city") as! NSDictionary
+        let fromCity: String = dictFromCity.object(forKey: "name") as! String
+        
+        let dictToCity: NSDictionary = dict.object(forKey: "to_city") as! NSDictionary
+        let toCity: String = dictToCity.object(forKey: "name") as! String
+        
+        let cityes = fromCity + " - " + toCity
+        
+        let fromDate: String = dict.object(forKey: "from_date") as! String
+        let fromTime: String = dict.object(forKey: "from_time") as! String
+        let toDate: String = dict.object(forKey: "to_date") as! String
+        let toTime: String = dict.object(forKey: "to_time") as! String
+        
+        cell.sityLabel.text = cityes
+        cell.dateFromLabel.text = fromDate
+        cell.timeFromLabel.text = fromTime
+        cell.dateToLabel.text = toDate
+        cell.timeToLabel.text = toTime
+        
         return cell
     }
     
@@ -159,22 +173,20 @@ class ScheduleViewController: UITableViewController {
     func showAlert(withMessage message: String, andTitle title: String) {
         
         let alert = UIAlertController(title: title,
-                                       message: message,
-                                       preferredStyle: UIAlertControllerStyle.alert)
+                                      message: message,
+                                      preferredStyle: UIAlertControllerStyle.alert)
         
         alert.addAction(UIAlertAction(title: "Ok",
                                       style: UIAlertActionStyle.`default`,
                                       handler: nil)) // ? nil -  верно?
         
         self.navigationController?.present(alert, animated: true, completion: nil) // вместо nil{ _ in }
-    
+        
     }
     
     func saveUserDefault() {
         
-        //let userDefault = UserDefaults.standard
-
-        self.userDefault.set(arrayDictionaries, forKey: "arrayDictionaries")
+        userDefault.set(arrayDictionaries, forKey: "arrayDictionaries")
         
     }
     

@@ -25,6 +25,8 @@ class CellFive: UITableViewCell {
         
         sityLabel = createLabel()
         sityLabel.textAlignment = .center
+        sityLabel.numberOfLines = 0
+        sityLabel.lineBreakMode = .byWordWrapping
         dateFromLabel = createLabel()
         dateFromLabel.textAlignment = .center
         timeFromLabel = createLabel()
@@ -34,8 +36,8 @@ class CellFive: UITableViewCell {
         timeToLabel = createLabel()
         timeToLabel.textAlignment = .center
         
-        }
-
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         
         fatalError("init(coder:) has not been implemented")
@@ -44,7 +46,7 @@ class CellFive: UITableViewCell {
     
     func headerConfig() {
         
-        self.backgroundColor = UIColor.init(colorLiteralRed: 215.0/255, green: 211.0/255, blue: 213.0/255, alpha: 0.5)
+        self.backgroundColor = UIColor.init(colorLiteralRed: 215.0/255, green: 211.0/255, blue: 213.0/255, alpha: 1)
         
         sityLabel.text = "Маршрут"
         sityLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
