@@ -13,7 +13,6 @@ class ScheduleViewController: UITableViewController {
     
     var arrayDictionaries = NSArray()
     var refresh = UIRefreshControl()
-    let identifierCellSchedule = "Cell"
     let userDefault = UserDefaults.standard
  
     override func viewDidLoad() {
@@ -32,14 +31,14 @@ class ScheduleViewController: UITableViewController {
         }
         
         //createTableView()
-        self.navigationItem.title = "Расписание автобусов"
+        self.navigationItem.title = "ScheduleBas".localized
         
         refresh = UIRefreshControl()
         
         refresh.addTarget(self, action: #selector(self.actionRefresh), for: .valueChanged)
         self.tableView.refreshControl = refresh
         
-        self.tableView.register(CellFive.self, forCellReuseIdentifier: identifierCellSchedule) // I register a cell - I use CellFive to create cells
+        self.tableView.register(CellFive.self, forCellReuseIdentifier: "MainCell") // I register a cell - I use CellFive to create cells
         
     }
     
@@ -126,7 +125,7 @@ class ScheduleViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifierCellSchedule, for: indexPath) as! CellFive
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! CellFive
         
         let dict: NSDictionary = arrayDictionaries.object(at:indexPath.row) as! NSDictionary
         
@@ -178,9 +177,9 @@ class ScheduleViewController: UITableViewController {
         
         alert.addAction(UIAlertAction(title: "Ok",
                                       style: UIAlertActionStyle.`default`,
-                                      handler: nil)) // ? nil -  верно?
+                                      handler: nil))
         
-        self.navigationController?.present(alert, animated: true, completion: nil) // вместо nil{ _ in }
+        self.navigationController?.present(alert, animated: true, completion: nil)
         
     }
     

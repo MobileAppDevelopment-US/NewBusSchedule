@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3627701389E2A286B25B7AB5 /* Pods_NewBusSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C250EF9013030943AC2683DF /* Pods_NewBusSchedule.framework */; };
+		726427871E90FA28004C21C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 726427861E90FA28004C21C5 /* Localizable.strings */; };
 		72983F5B1E859A8900DADB7E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72983F5A1E859A8900DADB7E /* InfoViewController.swift */; };
 		7299C3B81E83E19F0092D9C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */; };
 		7299C3BD1E83E19F0092D9C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299C3BB1E83E19F0092D9C1 /* Main.storyboard */; };
 		7299C3BF1E83E19F0092D9C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7299C3BE1E83E19F0092D9C1 /* Assets.xcassets */; };
 		7299C3C21E83E19F0092D9C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299C3C01E83E19F0092D9C1 /* LaunchScreen.storyboard */; };
-		7299C3CD1E83E19F0092D9C1 /* NewBusScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3CC1E83E19F0092D9C1 /* NewBusScheduleTests.swift */; };
-		7299C3D81E83E19F0092D9C1 /* NewBusScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3D71E83E19F0092D9C1 /* NewBusScheduleUITests.swift */; };
 		7299C3E61E83E6B70092D9C1 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */; };
 		7299C3E81E8447C10092D9C1 /* CellFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3E71E8447C10092D9C1 /* CellFive.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +51,7 @@
 /* Begin PBXFileReference section */
 		21250B3E66EF732719A96931 /* Pods-NewBusSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewBusSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		4BE063626E6E4F7E4F2C01F4 /* Pods_NewBusScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewBusScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		726427861E90FA28004C21C5 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		72983F5A1E859A8900DADB7E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		7299C3B41E83E19F0092D9C1 /* NewBusSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBusSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,11 +60,7 @@
 		7299C3C11E83E19F0092D9C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7299C3C31E83E19F0092D9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7299C3C81E83E19F0092D9C1 /* NewBusScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBusScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7299C3CC1E83E19F0092D9C1 /* NewBusScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBusScheduleTests.swift; sourceTree = "<group>"; };
-		7299C3CE1E83E19F0092D9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7299C3D31E83E19F0092D9C1 /* NewBusScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBusScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7299C3D71E83E19F0092D9C1 /* NewBusScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBusScheduleUITests.swift; sourceTree = "<group>"; };
-		7299C3D91E83E19F0092D9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		7299C3E71E8447C10092D9C1 /* CellFive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellFive.swift; sourceTree = "<group>"; };
 		85D5E299C3D9DB96B8D93F6B /* Pods-NewBusSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewBusSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,12 +113,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7264277D1E8E65B3004C21C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7299C3E71E8447C10092D9C1 /* CellFive.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		7264277E1E8E65D4004C21C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72983F5A1E859A8900DADB7E /* InfoViewController.swift */,
+				7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7264277F1E8E65EB004C21C5 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resourses;
+			sourceTree = "<group>";
+		};
+		726427801E8E6CEA004C21C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		7299C3AB1E83E19F0092D9C1 = {
 			isa = PBXGroup;
 			children = (
 				7299C3B61E83E19F0092D9C1 /* NewBusSchedule */,
-				7299C3CB1E83E19F0092D9C1 /* NewBusScheduleTests */,
-				7299C3D61E83E19F0092D9C1 /* NewBusScheduleUITests */,
 				7299C3B51E83E19F0092D9C1 /* Products */,
 				58D7E20D7A993B1F56990574 /* Pods */,
 				69DEBA1FED3E9BFAB4AE2A4E /* Frameworks */,
@@ -142,34 +167,18 @@
 		7299C3B61E83E19F0092D9C1 /* NewBusSchedule */ = {
 			isa = PBXGroup;
 			children = (
-				7299C3E71E8447C10092D9C1 /* CellFive.swift */,
-				72983F5A1E859A8900DADB7E /* InfoViewController.swift */,
-				7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */,
+				7264277D1E8E65B3004C21C5 /* Cells */,
+				726427801E8E6CEA004C21C5 /* Models */,
+				7264277E1E8E65D4004C21C5 /* Controller */,
+				7264277F1E8E65EB004C21C5 /* Resourses */,
 				7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */,
+				726427861E90FA28004C21C5 /* Localizable.strings */,
 				7299C3BE1E83E19F0092D9C1 /* Assets.xcassets */,
 				7299C3C01E83E19F0092D9C1 /* LaunchScreen.storyboard */,
 				7299C3BB1E83E19F0092D9C1 /* Main.storyboard */,
 				7299C3C31E83E19F0092D9C1 /* Info.plist */,
 			);
 			path = NewBusSchedule;
-			sourceTree = "<group>";
-		};
-		7299C3CB1E83E19F0092D9C1 /* NewBusScheduleTests */ = {
-			isa = PBXGroup;
-			children = (
-				7299C3CC1E83E19F0092D9C1 /* NewBusScheduleTests.swift */,
-				7299C3CE1E83E19F0092D9C1 /* Info.plist */,
-			);
-			path = NewBusScheduleTests;
-			sourceTree = "<group>";
-		};
-		7299C3D61E83E19F0092D9C1 /* NewBusScheduleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7299C3D71E83E19F0092D9C1 /* NewBusScheduleUITests.swift */,
-				7299C3D91E83E19F0092D9C1 /* Info.plist */,
-			);
-			path = NewBusScheduleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7299C3C21E83E19F0092D9C1 /* LaunchScreen.storyboard in Resources */,
+				726427871E90FA28004C21C5 /* Localizable.strings in Resources */,
 				7299C3BF1E83E19F0092D9C1 /* Assets.xcassets in Resources */,
 				7299C3BD1E83E19F0092D9C1 /* Main.storyboard in Resources */,
 			);
@@ -372,7 +382,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7299C3CD1E83E19F0092D9C1 /* NewBusScheduleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +389,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7299C3D81E83E19F0092D9C1 /* NewBusScheduleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

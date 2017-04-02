@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  NewBusSchedule
+
+  Created by Serik Klement on 01.04.17.
+  Copyright © 2017 Serik Klement. All rights reserved.
+*/
+
+// CellFife
+"Schedule" = "Маршрут";
+"FromDate" = "Дата отправления";
+"FromTime" = "Время отправления";
+"ToDate" = "Дата прибытия";
+"ToTime" = "Время прибытия";
+
+// ScheduleViewController
+"ScheduleBas" = "Расписание автобусов";
+
+// InfoViewController
+"FlightNumber" = "Номер рейса";
+"Schedule" = "Маршрут";
+"FromDate" = "Дата отправления";
+"FromTime" = "Время отправления";
+"ToDate" = "Дата прибытия";
+"ToTime" = "Время прибытия";
+"TicketPrice" = "Стоимость билета";
+"ReservedPlaces" = "Зарезервировано мест";
+"FlightInformation" = "Информация о рейсе";

@@ -12,24 +12,23 @@ class InfoViewController: UITableViewController {
     
     var dictionarySchedule: NSDictionary?
     var arrayNamesRows: NSArray?
-    let identifierCellInfo = "Cell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayNamesRows = ["Номер рейса",
-                          "Маршрут",
-                          "Дата отправления",
-                          "Время отправления",
-                          "Дата прибытия",
-                          "Время прибытия",
-                          "Стоимость билета",
-                          "Зарезервировано мест"]
+        arrayNamesRows = ["FlightNumber".localized,
+                          "Schedule".localized,
+                          "FromDate".localized,
+                          "FromTime".localized,
+                          "ToDate".localized,
+                          "ToTime".localized,
+                          "TicketPrice".localized,
+                          "ReservedPlaces".localized]
         
-        self.navigationItem.title = "Информация о рейсе"
+        self.navigationItem.title = "FlightInformation".localized
         
     }
-    
+
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,11 +39,11 @@ class InfoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: identifierCellInfo)
+        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "CallLogViewCell")
         
         if cell == nil {
             
-            cell = UITableViewCell(style: .value1, reuseIdentifier: identifierCellInfo)
+            cell = UITableViewCell(style: .value1, reuseIdentifier: "CallLogViewCell")
             
         }
         

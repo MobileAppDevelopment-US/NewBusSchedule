@@ -8,6 +8,17 @@
 
 import UIKit
 
+extension String {
+    
+    //MARK: Localized
+    
+    var localized: String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+        
+    }
+    
+}
+
 class CellFive: UITableViewCell {
     
     var sityLabel: UILabel! // Announced that such a variable would be
@@ -19,6 +30,8 @@ class CellFive: UITableViewCell {
     var space: CGFloat? // I create a variable
     var widthSityLabel: CGFloat?
     var widthOtherLabel: CGFloat?
+    
+    
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -44,35 +57,40 @@ class CellFive: UITableViewCell {
         
     }
     
+    
+    
     func headerConfig() {
         
         self.backgroundColor = UIColor.init(colorLiteralRed: 215.0/255, green: 211.0/255, blue: 213.0/255, alpha: 1)
         
-        sityLabel.text = "Маршрут"
-        sityLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
-        dateFromLabel.text = "Дата отправления"
+        let font = "Baskerville-Bold"
+        let sizeFont: CGFloat = 18
+        
+        sityLabel.text = "Schedule".localized
+        sityLabel.font = UIFont(name: font, size: sizeFont)
+        dateFromLabel.text = "FromDate".localized
         dateFromLabel.numberOfLines = 0
         dateFromLabel.lineBreakMode = .byWordWrapping
-        dateFromLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
-        timeFromLabel.text = "Время отправления"
+        dateFromLabel.font = UIFont(name: font, size: sizeFont)
+        timeFromLabel.text = "FromTime".localized
         timeFromLabel.numberOfLines = 0
         timeFromLabel.lineBreakMode = .byWordWrapping
-        timeFromLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
-        dateToLabel.text = "Дата прибытия"
+        timeFromLabel.font = UIFont(name: font, size: sizeFont)
+        dateToLabel.text = "ToDate".localized
         dateToLabel.numberOfLines = 0
         dateToLabel.lineBreakMode = .byWordWrapping
-        dateToLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
-        timeToLabel.text = "Время прибытия"
+        dateToLabel.font = UIFont(name: font, size: sizeFont)
+        timeToLabel.text = "ToTime".localized
         timeToLabel.numberOfLines = 0
         timeToLabel.lineBreakMode = .byWordWrapping
-        timeToLabel.font = UIFont(name: "Baskerville-Bold", size: 18)
+        timeToLabel.font = UIFont(name: font, size: sizeFont)
         
     }
     
     func createLabel() -> UILabel {
         
         let label = UILabel()
-        label.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(UIScreen.main.bounds.size.width * 0.3), height: CGFloat(self.frame.size.height))
+        label.frame = CGRect(x: 0, y: 0, width: CGFloat(UIScreen.main.bounds.size.width * 0.3), height: self.frame.size.height)
         label.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
         label.adjustsFontSizeToFitWidth = true
         
@@ -95,11 +113,11 @@ class CellFive: UITableViewCell {
         
         setWidthLabels()
         
-        sityLabel.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: widthSityLabel!, height: CGFloat(self.frame.size.height))
-        dateFromLabel.frame = CGRect(x: sityLabel.frame.size.width + space!, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
-        timeFromLabel.frame = CGRect(x: dateFromLabel.frame.size.width + dateFromLabel.frame.origin.x + space!, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
-        dateToLabel.frame = CGRect(x: timeFromLabel.frame.size.width + timeFromLabel.frame.origin.x + space!, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
-        timeToLabel.frame = CGRect(x: dateToLabel.frame.size.width + dateToLabel.frame.origin.x + space!, y: CGFloat(0), width: widthOtherLabel!, height: CGFloat(self.frame.size.height))
+        sityLabel.frame = CGRect(x: 0, y: 0, width: widthSityLabel!, height: self.frame.size.height)
+        dateFromLabel.frame = CGRect(x: sityLabel.frame.size.width + space!, y: 0, width: widthOtherLabel!, height: self.frame.size.height)
+        timeFromLabel.frame = CGRect(x: dateFromLabel.frame.size.width + dateFromLabel.frame.origin.x + space!, y: 0, width: widthOtherLabel!, height: self.frame.size.height)
+        dateToLabel.frame = CGRect(x: timeFromLabel.frame.size.width + timeFromLabel.frame.origin.x + space!, y: 0, width: widthOtherLabel!, height: self.frame.size.height)
+        timeToLabel.frame = CGRect(x: dateToLabel.frame.size.width + dateToLabel.frame.origin.x + space!, y: 0, width: widthOtherLabel!, height: self.frame.size.height)
         
     }
     
