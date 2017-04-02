@@ -10,7 +10,7 @@ import UIKit
 
 class InfoViewController: UITableViewController {
     
-    var dictionarySchedule: NSDictionary?
+    var cellInfoModel: SheldueCellModel?
     var arrayNamesRows: NSArray?
     
     override func viewDidLoad() {
@@ -48,32 +48,27 @@ class InfoViewController: UITableViewController {
         }
         
         cell?.textLabel?.text = arrayNamesRows?.object(at: indexPath.row) as! String?
-        
-        var integerNum: Int?
-        
+                
         switch (indexPath.row) {
             
         case 0:
-            integerNum = dictionarySchedule?.object(forKey: "bus_id") as? Int
-            cell?.detailTextLabel?.text = String(format: "%zd", integerNum!)
+            cell?.detailTextLabel?.text = cellInfoModel?.busID
         case 1:
-            cell?.detailTextLabel?.text = dictionarySchedule?.object(forKey: "info") as? String
+            cell?.detailTextLabel?.text = cellInfoModel?.info
             cell?.detailTextLabel?.adjustsFontSizeToFitWidth = true
             cell?.detailTextLabel?.numberOfLines = 2
         case 2:
-            cell?.detailTextLabel?.text = dictionarySchedule?.object(forKey: "from_date") as? String
+            cell?.detailTextLabel?.text = cellInfoModel?.fromDate
         case 3:
-            cell?.detailTextLabel?.text = dictionarySchedule?.object(forKey: "from_time") as? String
+            cell?.detailTextLabel?.text = cellInfoModel?.fromTime
         case 4:
-            cell?.detailTextLabel?.text = dictionarySchedule?.object(forKey: "to_date") as? String
+            cell?.detailTextLabel?.text = cellInfoModel?.toDate
         case 5:
-            cell?.detailTextLabel?.text = dictionarySchedule?.object(forKey: "to_time") as? String
+            cell?.detailTextLabel?.text = cellInfoModel?.toTime
         case 6:
-            integerNum = dictionarySchedule?.object(forKey: "price") as? Int
-            cell?.detailTextLabel?.text = String(format: "%zd", integerNum!)
+            cell?.detailTextLabel?.text = cellInfoModel?.info
         case 7:
-            integerNum = dictionarySchedule?.object(forKey: "reservation_count") as? Int
-            cell?.detailTextLabel?.text = String(format: "%zd", integerNum!)
+            cell?.detailTextLabel?.text = cellInfoModel?.reservationCount
             
         default:
             break

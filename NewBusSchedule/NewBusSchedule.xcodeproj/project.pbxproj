@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		3627701389E2A286B25B7AB5 /* Pods_NewBusSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C250EF9013030943AC2683DF /* Pods_NewBusSchedule.framework */; };
 		726427871E90FA28004C21C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 726427861E90FA28004C21C5 /* Localizable.strings */; };
+		726427891E912ED6004C21C5 /* SheldueCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726427881E912ED6004C21C5 /* SheldueCellModel.swift */; };
+		7264278D1E9146D3004C21C5 /* SheldueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264278C1E9146D3004C21C5 /* SheldueCell.swift */; };
 		72983F5B1E859A8900DADB7E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72983F5A1E859A8900DADB7E /* InfoViewController.swift */; };
 		7299C3B81E83E19F0092D9C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */; };
 		7299C3BD1E83E19F0092D9C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299C3BB1E83E19F0092D9C1 /* Main.storyboard */; };
 		7299C3BF1E83E19F0092D9C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7299C3BE1E83E19F0092D9C1 /* Assets.xcassets */; };
 		7299C3C21E83E19F0092D9C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299C3C01E83E19F0092D9C1 /* LaunchScreen.storyboard */; };
 		7299C3E61E83E6B70092D9C1 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */; };
-		7299C3E81E8447C10092D9C1 /* CellFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3E71E8447C10092D9C1 /* CellFive.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		21250B3E66EF732719A96931 /* Pods-NewBusSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewBusSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		4BE063626E6E4F7E4F2C01F4 /* Pods_NewBusScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewBusScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		726427861E90FA28004C21C5 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		726427881E912ED6004C21C5 /* SheldueCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheldueCellModel.swift; sourceTree = "<group>"; };
+		7264278C1E9146D3004C21C5 /* SheldueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheldueCell.swift; sourceTree = "<group>"; };
 		72983F5A1E859A8900DADB7E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		7299C3B41E83E19F0092D9C1 /* NewBusSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBusSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +65,6 @@
 		7299C3C81E83E19F0092D9C1 /* NewBusScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBusScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299C3D31E83E19F0092D9C1 /* NewBusScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBusScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		7299C3E71E8447C10092D9C1 /* CellFive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellFive.swift; sourceTree = "<group>"; };
 		85D5E299C3D9DB96B8D93F6B /* Pods-NewBusSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewBusSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.debug.xcconfig"; sourceTree = "<group>"; };
 		C250EF9013030943AC2683DF /* Pods_NewBusSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewBusSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CC6C7AE0997D3B35D80D74 /* Pods_NewBusScheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewBusScheduleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +118,7 @@
 		7264277D1E8E65B3004C21C5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7299C3E71E8447C10092D9C1 /* CellFive.swift */,
+				7264278C1E9146D3004C21C5 /* SheldueCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 		726427801E8E6CEA004C21C5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				726427881E912ED6004C21C5 /* SheldueCellModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -371,9 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7264278D1E9146D3004C21C5 /* SheldueCell.swift in Sources */,
 				7299C3B81E83E19F0092D9C1 /* AppDelegate.swift in Sources */,
-				7299C3E81E8447C10092D9C1 /* CellFive.swift in Sources */,
 				72983F5B1E859A8900DADB7E /* InfoViewController.swift in Sources */,
+				726427891E912ED6004C21C5 /* SheldueCellModel.swift in Sources */,
 				7299C3E61E83E6B70092D9C1 /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

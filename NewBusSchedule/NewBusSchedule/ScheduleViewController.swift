@@ -14,11 +14,13 @@ class ScheduleViewController: UITableViewController {
     var arrayDictionaries = NSArray()
     var refresh = UIRefreshControl()
     let userDefault = UserDefaults.standard
- 
+    var cellModelsArray = [SheldueCellModel]() // array
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayDictionaries = (userDefault.object(forKey: "arrayDictionaries") as? NSArray?)! ?? [String]() as NSArray
+        cellModelsArray = ((userDefault.object(forKey: "cellModelsArray") as? NSArray?)! ?? [String]() as NSArray) as! [SheldueCellModel]
+        //cellModelsArray = (userDefault.object(forKey: cellModelsArray))
         
         if arrayDictionaries.count == 0 {  // isEmpty?
             
@@ -38,7 +40,7 @@ class ScheduleViewController: UITableViewController {
         refresh.addTarget(self, action: #selector(self.actionRefresh), for: .valueChanged)
         self.tableView.refreshControl = refresh
         
-        self.tableView.register(CellFive.self, forCellReuseIdentifier: "MainCell") // I register a cell - I use CellFive to create cells
+        self.tableView.register(SheldueCell.self, forCellReuseIdentifier: "MainCell") // I register a cell - I use SheldueCell to create cells
         
     }
     
@@ -46,11 +48,11 @@ class ScheduleViewController: UITableViewController {
         
         self.tableView.reloadData()
         
-        showAlert(withMessage: "Вы используете данные из локальной базы. Пожалуйста обновите данные!",
-                  andTitle: "ВНИМАНИЕ!")
+        showAlert(withMessage: "UseDataLocalDatabase".localized,
+                  andTitle: "Attention!".localized)
         
     }
-    
+
     func loadData()  {
         
         addLockView()
@@ -66,25 +68,39 @@ class ScheduleViewController: UITableViewController {
                     
                     self.arrayDictionaries = dictJSON.object(forKey: "data") as! NSArray
                     
+                    self.createModels()
+                    
                     self.refresh.endRefreshing()
                     
                     self.tableView.reloadData()
                     
-                    self.saveUserDefault()
+                    //self.saveUserDefault()
                     
                     self.view.viewWithTag(1)?.removeFromSuperview()
                     
-                    self.showAlert(withMessage: "Список маршрутов обновлен",
+                    self.showAlert(withMessage: "ListUpdated".localized,
                                    andTitle: "")
                     
                 } else {
                     
-                    self.showAlert(withMessage: "Список маршрутов пуст",
-                                   andTitle: "ВНИМАНИЕ")
+                    self.showAlert(withMessage: "ListEmpty".localized,
+                                   andTitle: "Attention".localized)
                     
                 }
                 
             }
+            
+        }
+        
+    }
+    
+    func createModels() {
+        
+        for dict in self.arrayDictionaries {
+            
+            let cellModel = SheldueCellModel(withDictionary: dict as! NSDictionary)
+            
+            self.cellModelsArray.append(cellModel)
             
         }
         
@@ -107,7 +123,7 @@ class ScheduleViewController: UITableViewController {
         let controller = InfoViewController()
         self.navigationController?.pushViewController(controller, animated: true)
         
-        controller.dictionarySchedule = arrayDictionaries.object(at:indexPath.row) as? NSDictionary 
+        controller.cellInfoModel = cellModelsArray[indexPath.row]
         
     }
     
@@ -121,32 +137,17 @@ class ScheduleViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return arrayDictionaries.count
+        return cellModelsArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! CellFive
-        
-        let dict: NSDictionary = arrayDictionaries.object(at:indexPath.row) as! NSDictionary
-        
-        let dictFromCity: NSDictionary = dict.object(forKey: "from_city") as! NSDictionary
-        let fromCity: String = dictFromCity.object(forKey: "name") as! String
-        
-        let dictToCity: NSDictionary = dict.object(forKey: "to_city") as! NSDictionary
-        let toCity: String = dictToCity.object(forKey: "name") as! String
-        
-        let cityes = fromCity + " - " + toCity
-        
-        let fromDate: String = dict.object(forKey: "from_date") as! String
-        let fromTime: String = dict.object(forKey: "from_time") as! String
-        let toDate: String = dict.object(forKey: "to_date") as! String
-        let toTime: String = dict.object(forKey: "to_time") as! String
-        
-        cell.sityLabel.text = cityes
-        cell.dateFromLabel.text = fromDate
-        cell.timeFromLabel.text = fromTime
-        cell.dateToLabel.text = toDate
-        cell.timeToLabel.text = toTime
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! SheldueCell
+
+        cell.sityLabel.text = cellModelsArray[indexPath.row].sity
+        cell.fromDateLabel.text = cellModelsArray[indexPath.row].fromDate
+        cell.fromTimeLabel.text = cellModelsArray[indexPath.row].fromTime
+        cell.toDateLabel.text = cellModelsArray[indexPath.row].toDate
+        cell.toTimeLabel.text = cellModelsArray[indexPath.row].toTime
         
         return cell
     }
@@ -161,7 +162,7 @@ class ScheduleViewController: UITableViewController {
     //create a header
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let headerCell = CellFive(style: .default, reuseIdentifier: "header")
+        let headerCell = SheldueCell(style: .default, reuseIdentifier: "header")
         
         headerCell.headerConfig()
         
@@ -185,7 +186,7 @@ class ScheduleViewController: UITableViewController {
     
     func saveUserDefault() {
         
-        userDefault.set(arrayDictionaries, forKey: "arrayDictionaries")
+        userDefault.set(cellModelsArray, forKey: "cellModelsArray")
         
     }
     

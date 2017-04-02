@@ -15,6 +15,10 @@
 
 // ScheduleViewController
 "ScheduleBas" = "Расписание автобусов";
+"UseDataLocalDatabase" = "Вы используете данные из локальной базы. Пожалуйста обновите данные!";
+"Attention" = "ВНИМАНИЕ!";
+"ListUpdated" = "Список маршрутов обновлен";
+"ListEmpty" = "Список маршрутов пуст";
 
 // InfoViewController
 "FlightNumber" = "Номер рейса";
