@@ -8,17 +8,6 @@
 
 import UIKit
 
-extension String {
-    
-    //MARK: Localized
-    
-    var localized: String {
-        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
-        
-    }
-    
-}
-
 class SheldueCell: UITableViewCell {
     
     var sityLabel: UILabel! // Announced that such a variable would be
@@ -52,12 +41,8 @@ class SheldueCell: UITableViewCell {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        
         fatalError("init(coder:) has not been implemented")
-        
     }
-    
-    
     
     func headerConfig() {
         

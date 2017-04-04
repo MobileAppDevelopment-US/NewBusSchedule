@@ -11,6 +11,7 @@
 		726427871E90FA28004C21C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 726427861E90FA28004C21C5 /* Localizable.strings */; };
 		726427891E912ED6004C21C5 /* SheldueCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726427881E912ED6004C21C5 /* SheldueCellModel.swift */; };
 		7264278D1E9146D3004C21C5 /* SheldueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264278C1E9146D3004C21C5 /* SheldueCell.swift */; };
+		726427931E93880B004C21C5 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726427921E93880B004C21C5 /* Localized.swift */; };
 		72983F5B1E859A8900DADB7E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72983F5A1E859A8900DADB7E /* InfoViewController.swift */; };
 		7299C3B81E83E19F0092D9C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */; };
 		7299C3BD1E83E19F0092D9C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299C3BB1E83E19F0092D9C1 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		726427861E90FA28004C21C5 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		726427881E912ED6004C21C5 /* SheldueCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheldueCellModel.swift; sourceTree = "<group>"; };
 		7264278C1E9146D3004C21C5 /* SheldueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheldueCell.swift; sourceTree = "<group>"; };
+		726427921E93880B004C21C5 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		72983F5A1E859A8900DADB7E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		7299C3B41E83E19F0092D9C1 /* NewBusSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBusSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		726427911E9387CE004C21C5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				726427921E93880B004C21C5 /* Localized.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		7299C3AB1E83E19F0092D9C1 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +180,7 @@
 		7299C3B61E83E19F0092D9C1 /* NewBusSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				726427911E9387CE004C21C5 /* Helpers */,
 				7264277D1E8E65B3004C21C5 /* Cells */,
 				726427801E8E6CEA004C21C5 /* Models */,
 				7264277E1E8E65D4004C21C5 /* Controller */,
@@ -375,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7264278D1E9146D3004C21C5 /* SheldueCell.swift in Sources */,
+				726427931E93880B004C21C5 /* Localized.swift in Sources */,
 				7299C3B81E83E19F0092D9C1 /* AppDelegate.swift in Sources */,
 				72983F5B1E859A8900DADB7E /* InfoViewController.swift in Sources */,
 				726427891E912ED6004C21C5 /* SheldueCellModel.swift in Sources */,

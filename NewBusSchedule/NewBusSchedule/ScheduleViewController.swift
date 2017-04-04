@@ -9,6 +9,9 @@
 import UIKit
 import Alamofire
 
+// the first time the application gets the data and saves it to the local database, with subsequent entries the data is displayed from the database, the data in the database is updated on the svaypu down in the list.
+// when performing network operations, the interface is blocked and the user sees the wait dialog. If the server gives up an empty list, the user will see "Route list empty" in the middle of the screen. If the network operation fails, the user will see a message with a description of the problem and a "Repeat" button in the middle of the screen.
+
 class ScheduleViewController: UITableViewController {
     
     var arrayDictionaries = NSArray()
@@ -28,7 +31,7 @@ class ScheduleViewController: UITableViewController {
             
         } else {
             
-            dataFromLocalDatabase()
+            
             
         }
         
