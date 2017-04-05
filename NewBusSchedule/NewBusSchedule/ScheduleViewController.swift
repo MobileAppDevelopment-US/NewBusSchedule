@@ -31,7 +31,7 @@ class ScheduleViewController: UITableViewController {
             
         } else {
             
-            
+            //dataFromLocalDatabase()
             
         }
         
@@ -43,7 +43,7 @@ class ScheduleViewController: UITableViewController {
         refresh.addTarget(self, action: #selector(self.actionRefresh), for: .valueChanged)
         self.tableView.refreshControl = refresh
         
-        self.tableView.register(SheldueCell.self, forCellReuseIdentifier: "MainCell") // I register a cell - I use SheldueCell to create cells
+        registerCell()
         
     }
     
@@ -96,6 +96,8 @@ class ScheduleViewController: UITableViewController {
         }
         
     }
+    
+
     
     func createModels() {
         
@@ -155,6 +157,11 @@ class ScheduleViewController: UITableViewController {
         return cell
     }
     
+    func registerCell() {
+        
+        self.tableView.register(SheldueCell.self, forCellReuseIdentifier: "MainCell") // I register a cell - I use SheldueCell to create cells
+    }
+    
     //height of the header
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
@@ -192,6 +199,8 @@ class ScheduleViewController: UITableViewController {
         userDefault.set(cellModelsArray, forKey: "cellModelsArray")
         
     }
-    
-    
+
+
 }
+    
+

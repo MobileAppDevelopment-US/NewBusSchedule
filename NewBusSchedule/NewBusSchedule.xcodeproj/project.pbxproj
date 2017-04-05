@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3627701389E2A286B25B7AB5 /* Pods_NewBusSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C250EF9013030943AC2683DF /* Pods_NewBusSchedule.framework */; };
+		5E60008375EE047BA4D3057C /* Pods_NewBusSchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169E4F9F5085619310E786F2 /* Pods_NewBusSchedule.framework */; };
 		726427871E90FA28004C21C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 726427861E90FA28004C21C5 /* Localizable.strings */; };
 		726427891E912ED6004C21C5 /* SheldueCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726427881E912ED6004C21C5 /* SheldueCellModel.swift */; };
 		7264278D1E9146D3004C21C5 /* SheldueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264278C1E9146D3004C21C5 /* SheldueCell.swift */; };
@@ -51,12 +51,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		169E4F9F5085619310E786F2 /* Pods_NewBusSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewBusSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21250B3E66EF732719A96931 /* Pods-NewBusSchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewBusSchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.release.xcconfig"; sourceTree = "<group>"; };
 		4BE063626E6E4F7E4F2C01F4 /* Pods_NewBusScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewBusScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		726427861E90FA28004C21C5 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		726427881E912ED6004C21C5 /* SheldueCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheldueCellModel.swift; sourceTree = "<group>"; };
 		7264278C1E9146D3004C21C5 /* SheldueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheldueCell.swift; sourceTree = "<group>"; };
 		726427921E93880B004C21C5 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		726427D31E955610004C21C5 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Users/Serik/Library/Developer/Xcode/DerivedData/NewBusSchedule-bdzsbgdxymnnmmdoqngqbxggpfgu/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		72983F5A1E859A8900DADB7E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		7299C3B41E83E19F0092D9C1 /* NewBusSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBusSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299C3B71E83E19F0092D9C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 		7299C3D31E83E19F0092D9C1 /* NewBusScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBusScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299C3E51E83E6B70092D9C1 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		85D5E299C3D9DB96B8D93F6B /* Pods-NewBusSchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewBusSchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewBusSchedule/Pods-NewBusSchedule.debug.xcconfig"; sourceTree = "<group>"; };
-		C250EF9013030943AC2683DF /* Pods_NewBusSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewBusSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CC6C7AE0997D3B35D80D74 /* Pods_NewBusScheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewBusScheduleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3627701389E2A286B25B7AB5 /* Pods_NewBusSchedule.framework in Frameworks */,
+				5E60008375EE047BA4D3057C /* Pods_NewBusSchedule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +111,10 @@
 		69DEBA1FED3E9BFAB4AE2A4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C250EF9013030943AC2683DF /* Pods_NewBusSchedule.framework */,
+				726427D31E955610004C21C5 /* libAFNetworking.a */,
 				4BE063626E6E4F7E4F2C01F4 /* Pods_NewBusScheduleTests.framework */,
 				C7CC6C7AE0997D3B35D80D74 /* Pods_NewBusScheduleUITests.framework */,
+				169E4F9F5085619310E786F2 /* Pods_NewBusSchedule.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
