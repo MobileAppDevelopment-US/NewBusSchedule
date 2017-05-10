@@ -42,6 +42,7 @@ class ScheduleViewController: UITableViewController {
         
         refresh.addTarget(self, action: #selector(self.actionRefresh), for: .valueChanged)
         self.tableView.refreshControl = refresh
+
         
         registerCell()
         
@@ -96,8 +97,6 @@ class ScheduleViewController: UITableViewController {
         }
         
     }
-    
-
     
     func createModels() {
         

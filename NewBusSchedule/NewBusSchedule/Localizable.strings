@@ -6,7 +6,7 @@
   Copyright © 2017 Serik Klement. All rights reserved.
 */
 
-// CellFife
+// SheldueCell
 "Schedule" = "Маршрут";
 "FromDate" = "Дата отправления";
 "FromTime" = "Время отправления";
